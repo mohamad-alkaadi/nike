@@ -23,10 +23,10 @@ const App = () => {
         <CustomerReviews/>
       </section>
       <section className="padding-x sm:py-16 py-16 w-full">
-        <Subscribe/> 
+        <Subscribe/>
       </section>
       <section className="bg-black padding-x padding-t pb-8">
-        <Footer/> 
+        <Footer/>
       </section>
     </main>
   )
