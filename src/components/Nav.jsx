@@ -12,7 +12,7 @@ const Nav = () => {
         <a href='/'>
           <img src={headerLogo} className={`${nav && 'hidden'}`} alt='Logo' width={130} height={29}/>
         </a>
-        <ul className={`flex-1 flex justify-center items-center gap-16 max-lg:flex-col max-lg:h-fit max-lg:w-full max-lg:absolute max-lg:left-0 max-lg:bg-coral-red max-lg:pt-40 max-lg:gap-1 max-lg:items-center ${!nav && 'max-lg:opacity-0'}`}>
+        <ul className={`flex-1 flex justify-center items-center gap-16 max-lg:flex-col max-lg:h-fit max-lg:w-full max-lg:absolute max-lg:left-0 max-lg:bg-slate-400 max-lg:pt-40 max-lg:gap-1 max-lg:items-center ${!nav && 'max-lg:opacity-0'}`}>
           {navLinks.map((item) => (
             <li key={item.label} className='max-lg:pb-6'>
               <a href={item.href} className='font-montserrat landing-normal text-lg text-slate-gray max-lg:text-white'>{item.label}</a>
