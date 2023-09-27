@@ -1,12 +1,15 @@
+import { useState } from 'react'
 import { Hero, PopularProducts, SuperQuality, Services, SpecialOffer, CustomerReviews, Subscribe, Footer} from './sections'
 import Nav from './components/Nav'
 
 const App = () => {
+  const [nav, setNav] = useState(false)
+
   return(
     <main className="relative">
-      <Nav/>
+      <Nav nav={nav} setNav={setNav}/>
       <section className="xl:padding-l wide:padding-r padding-b">
-        <Hero/>
+        <Hero nav={nav}/>
       </section>
       <section className="padding">
         <PopularProducts/>
