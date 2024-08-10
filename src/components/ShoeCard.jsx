@@ -1,9 +1,9 @@
 const ShoeCard = ({ imgURL, changeBigShoeImage, bigShoeImg }) => {
   const handleClick = () => {
     if (bigShoeImg !== imgURL.bigShoe) {
-      changeBigShoeImage(imgURL.bigShoe);
+      changeBigShoeImage(imgURL.bigShoe)
     }
-  };
+  }
 
   return (
     <div
@@ -14,17 +14,18 @@ const ShoeCard = ({ imgURL, changeBigShoeImage, bigShoeImg }) => {
       } cursor-pointer max-sm:flex-1`}
       onClick={handleClick}
     >
-      <div className='flex justify-center items-center bg-card bg-center bg-cover sm:w-40 sm:h-40 rounded-xl max-sm:p-4'>
+      <div className="flex justify-center items-center bg-card bg-center bg-cover sm:w-40 sm:h-40 rounded-xl max-sm:p-4">
         <img
+          draggable={false}
           src={imgURL.thumbnail}
-          alt='shoe colletion'
+          alt="shoe colletion"
           width={127}
           height={103.34}
-          className='object-contain'
+          className="object-contain"
         />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ShoeCard;
+export default ShoeCard
