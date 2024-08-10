@@ -1,7 +1,6 @@
-import React from 'react'
-import { footerLogo } from '../assets/images'
-import { footerLinks, socialMedia } from '../constants'
-import { copyrightSign } from '../assets/icons'
+import { copyrightSign } from "../assets/icons";
+import { footerLogo } from "../assets/images";
+import { footerLinks, socialMedia } from "../constants";
 
 const Footer = () => {
   return (
@@ -68,7 +67,7 @@ const Footer = () => {
         <p className='font-montserrat cursor-pointer'>Terms & Conditions</p>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
